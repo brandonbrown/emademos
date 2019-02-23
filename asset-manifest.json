@@ -1,0 +1,15 @@
+{
+  "main.css": "/emademos/client/static/css/main.8b47707e.chunk.css",
+  "main.js": "/emademos/client/static/js/main.13d8a8da.chunk.js",
+  "main.js.map": "/emademos/client/static/js/main.13d8a8da.chunk.js.map",
+  "runtime~main.js": "/emademos/client/static/js/runtime~main.c54e38cc.js",
+  "runtime~main.js.map": "/emademos/client/static/js/runtime~main.c54e38cc.js.map",
+  "static/js/2.a1a1f634.chunk.js": "/emademos/client/static/js/2.a1a1f634.chunk.js",
+  "static/js/2.a1a1f634.chunk.js.map": "/emademos/client/static/js/2.a1a1f634.chunk.js.map",
+  "index.html": "/emademos/client/index.html",
+  "precache-manifest.e7e1018990c180ba1e69a45af46b8fdc.js": "/emademos/client/precache-manifest.e7e1018990c180ba1e69a45af46b8fdc.js",
+  "service-worker.js": "/emademos/client/service-worker.js",
+  "static/css/main.8b47707e.chunk.css.map": "/emademos/client/static/css/main.8b47707e.chunk.css.map",
+  "static/media/App.css": "/emademos/client/static/media/band1.7b39573a.png",
+  "static/media/logo.svg": "/emademos/client/static/media/logo.5d5d9eef.svg"
+}
