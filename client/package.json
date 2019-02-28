@@ -4,11 +4,13 @@
   "private": true,
   "homepage": "http://brandonbrown.github.io/emademos",
   "dependencies": {
+    "axios": "^0.18.0",
     "classnames": "^2.2.6",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-on-scroll": "^0.2.2",
-    "react-scripts": "2.1.5"
+    "react-scripts": "2.1.5",
+    "react-stripe-checkout": "^2.6.3"
   },
   "scripts": {
     "start": "react-scripts start",
