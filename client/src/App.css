@@ -5,11 +5,13 @@ body {
   font: 18px/1.4em inherit;
   margin: 0;
   padding: 0;
+ 
 }
 
 .app-wrapper {
   min-width: 100vw;
   min-height: 100vh;
+  
 }
 
 h1 {
@@ -28,7 +30,9 @@ nav ol {
   text-align: center;
   display: flex;
   flex-direction: column;
-  
+  position: fixed;
+  z-index: 40;
+  width: 100%;
   /* margin-top: 56px; */
 }
 .nav-horizontal ul {
@@ -109,7 +113,7 @@ nav ol {
   display: none;
   position: fixed;
   right: 6px;
-  top: 6px;
+  top: 11px;
   color: #888;
   font: 30px/44px Arial, sans-serif;
   background: #fafafa;
@@ -128,15 +132,15 @@ nav ol {
 
 main {
   width: 100vw;
-  min-height: 100vh;
+  min-height: 200vh;
   background: black;
 }
 
-main nav {
+main > nav {
   background: white;
 }
 
-main nav li a {
+main > nav li a {
   color: black;
 }
 
@@ -224,6 +228,7 @@ main nav li a {
   color: black;
   padding-left: 5%;
   padding-right: 5%;
+  background: white;
 }
 .bandInfoCollapsed {
   display: flex;
@@ -260,7 +265,186 @@ main nav li a {
   margin: 10px 8px 10px 0;
 }
 
-@media screen and (max-width: 768px) {
+.sendSecondHeader {
+  position: fixed;
+  top: -50px;
+  z-index: 20;
+  /* height: 0; */
+  /* visibility: hidden; */
+  width: 100%;
+  opacity: 0;
+}
+
+.sendSecondHeaderIn {
+  top: 33px;
+  visibility: visible;
+  opacity: 1;
+  transition: top .25s ease-in-out,
+              opacity .1s ease-in-out;
+}
+
+.sendSecondHeaderOut {
+  top: -50px;
+  opacity: 0;
+  transition: top .25s ease-in-out,
+              opacity .1s ease-in-out;
+}
+
+.hero {
+  /* width: 100vw;
+  height: 100vh; */
+  background-image: url(./assets/img/band1.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: fixed;
+  top: 33px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  opacity: 1;
+}
+
+.hero:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  bottom: -1px;
+  left: 0;
+  background: rgb(0,0,0);
+  background: -moz-linear-gradient(0deg, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 95%);
+  background: -webkit-linear-gradient(0deg, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 95%);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 95%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+}
+
+.fadeHero {
+  opacity: 0;
+  
+}
+
+.fadeHero.fadeHeroIn {
+  opacity: 1;
+  transition: all .5s ease;
+  left: 0;
+}
+
+.fadeHero.fadeHeroOut {
+  opacity: 0;
+  transition: all 1.5s ease;
+  right: 0;
+}
+
+.heroHeader {
+  width: 100vw;
+  min-height: 70vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  z-index: 5;
+  flex-direction: column;
+}
+
+.bandNameLarge {
+  color: white;
+  font-weight: 700;
+  font-size: 6rem;
+  text-transform: uppercase;
+  
+  /* top: 0;
+  left: 0; */
+  margin: 0;
+  padding: 0;
+}
+
+.feed {
+  position: relative;
+  z-index: 10;
+  /* background-color: red; */
+  width: 66%;
+  /* min-height: 1000px; */
+  margin: 10vh auto 0;
+  padding-bottom: 100px;
+}
+
+.feed nav {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.feed nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-right: 20px;
+  padding-bottom: 5px;
+}
+
+.feed nav a:first-child {
+  border-bottom: 5px solid white;
+}
+
+.feed article {
+  background: white;
+  margin-bottom: 50px;
+}
+
+.feed article .imgContainer {
+  background-color: burlywood;
+  width: 100%;
+  height: 200px;
+}
+
+.feed article .contentContainer {
+  padding: 10px 15px;
+  box-sizing: border-box;
+}
+
+.contentContainer h3 {
+  text-transform: uppercase;
+  font-size: 1.75rem;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.articleMeta {
+  display: flex;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: .75rem;
+  align-items: center;
+}
+
+.articleMeta p {
+  margin: 0;
+}
+
+.articleMeta p:first-child {
+  color: white;
+  background-color: black;
+  padding: 3px 5px;
+  margin-right: .5rem;
+}
+
+.contentContainer > p {
+  text-align: left;
+}
+
+.interactions {
+  width: 100%;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  display: flex;
+  color: #A4A4A4;
+  background-color: #4A4A4A;
+}
+
+@media screen and (max-width: 600px) {
   .wrapper {
     position: fixed;
     top: 0;
@@ -368,6 +552,28 @@ main nav li a {
   .collapsedNav {
     padding-left: 10px;
     padding-right: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .collapsedNav .metaActions {
+    display: none;
+  }
+
+  .sendSecondHeader,
+  .sendSecondHeaderIn,
+  .sendSecondHeaderOut,{
+    position: fixed;
+    top: 33px;
+    z-index: 20;
+    height: 0;
+    visibility: visible;
+    width: 100%;
+  }
+
+  .sendSecondHeader {
+    opacity: 1 !important;
   }
 }
 
