@@ -2,7 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://brandonbrown.github.io/emademos",
+  "homepage": "https://brandonbrown.github.io/emademos",
   "dependencies": {
     "axios": "^0.18.0",
     "classnames": "^2.2.6",

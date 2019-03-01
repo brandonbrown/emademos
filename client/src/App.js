@@ -79,11 +79,11 @@ class App extends Component {
 
                         </section>
                     </ScrollFade>
-                    <Checkout
+                    {/* <Checkout
                       name={'Cradle of Filth'}
                       description={'Become an Elite Fan'}
                       amount={1}
-                    />
+                    /> */}
                     <section className="feed">
                       <nav>
                         <a href="#">All Content</a>

@@ -16,7 +16,7 @@ import * as serviceWorker from './serviceWorker';
 import PaymentInfo from './PaymentInfo';
 
 const routing = (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div>
         <Route exact path="/" component={App} />
         <Route path="/dashboard" component={Dashboard} />
