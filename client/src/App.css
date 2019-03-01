@@ -84,10 +84,10 @@ nav ol {
   text-transform: uppercase;
 }
 .nav-horizontal a:visited {
-  color: #222;
+  color: white;
 }
 .nav-horizontal a:hover {
-  color: #d22;
+  color: white;
   text-decoration: none;
 }
 
