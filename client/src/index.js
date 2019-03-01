@@ -4,14 +4,30 @@ import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 import './index.css';
 import App from './App';
 import Dashboard from './Dashboard';
+import Subscriptions from './Subscriptions';
+import Explore from './Explore';
+import Settings from './Settings';
+import Profile from './Profile';
+import AddBand from './AddBand';
+import Band from './Band';
+import Help from './Help';
 
 import * as serviceWorker from './serviceWorker';
+import PaymentInfo from './PaymentInfo';
 
 const routing = (
     <Router>
       <div>
         <Route exact path="/" component={App} />
         <Route path="/dashboard" component={Dashboard} />
+        <Route path="/subscriptions" component={Subscriptions} />
+        <Route path="/explore" component={Explore} />
+        <Route path="/add-band" component={AddBand} />
+        <Route path="/profile" component={Profile} />
+        <Route path="/settings" component={Settings} />
+        <Route path="/payment" component={PaymentInfo} />
+        <Route path="/help" component={Help} />
+        <Route path="/band" component={Band} />
       </div>
     </Router>
   )

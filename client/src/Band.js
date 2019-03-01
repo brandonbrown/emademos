@@ -3,11 +3,12 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import logo from './logo.svg';
 import './App.css';
 import './Dashboard.css';
+import './Subscriptions.css';
 import App from './App';
 
 import ScrollFade from './ScrollFade'
 
-class Dashboard extends Component {
+class Band extends Component {
 
   render() {
     
@@ -66,56 +67,7 @@ class Dashboard extends Component {
                         <a href="#">Tour Updates</a>
                       </nav>
                       <article>
-                        <div className="imgContainer">
-
-                        </div>
-                        <div className="contentContainer">
-                        
-                          <h3>Back On The Road</h3>
-                          <section className="articleMeta">
-                            <p>Elite Fan Exclusive</p>
-                            <p>6:56PM February 14, 2019</p>
-                          </section>
-                          <p>Becoming an Elite Fan unlocks exclusive content, merchandise, tour announcements, and more from Cradle of Filth. Show your dedication to your favorite musicians with monthly memberships starting at $5.55.</p>
-                        </div>
-                        <div className="interactions">
-                          <p>756 Likes</p>
-                          <p>135 Comments</p>
-                        </div>
-                      </article>
-                      <article>
-                        <div className="imgContainer">
-
-                        </div>
-                        <div className="contentContainer">
-                          <h3>Back On The Road</h3>
-                          <section className="articleMeta">
-                            <p>Elite Fan Exclusive</p>
-                            <p>6:56PM February 14, 2019</p>
-                          </section>
-                          <p>Becoming an Elite Fan unlocks exclusive content, merchandise, tour announcements, and more from Cradle of Filth. Show your dedication to your favorite musicians with monthly memberships starting at $5.55.</p>
-                        </div>
-                        <div className="interactions">
-                          <p>756 Likes</p>
-                          <p>135 Comments</p>
-                        </div>
-                      </article>
-                      <article>
-                        <div className="imgContainer">
-
-                        </div>
-                        <div className="contentContainer">
-                          <h3>Back On The Road</h3>
-                          <section className="articleMeta">
-                            <p>Elite Fan Exclusive</p>
-                            <p>6:56PM February 14, 2019</p>
-                          </section>
-                          <p>Becoming an Elite Fan unlocks exclusive content, merchandise, tour announcements, and more from Cradle of Filth. Show your dedication to your favorite musicians with monthly memberships starting at $5.55.</p>
-                        </div>
-                        <div className="interactions">
-                          <p>756 Likes</p>
-                          <p>135 Comments</p>
-                        </div>
+                        <p>band</p>
                       </article>
                     </section>
   
@@ -133,4 +85,4 @@ class Dashboard extends Component {
   }
 }
 
-export default Dashboard;
+export default Band;

@@ -17,21 +17,21 @@ class App extends Component {
 
           <nav className="nav-off-canvas nav-horizontal" role="off-canvas">
               
-              <ul className="primary-nav">
+          <ul className="primary-nav">
                   <li className="logo">
-                    <a href="#">EMA</a>
+                  <Link to="/">EMA</Link>
                   </li>
                   
                   <li><a href="#">Add Your Band</a></li>
-                  <li><a href="#">Explore Bands</a></li>
+                  <li><Link to="/explore">Explore Bands</Link></li>
                   <li><Link to="/dashboard" className="avatar">IMG</Link>
                       <ul>
                           <ul>
                               <li><Link to="/dashboard">Dashboard</Link></li>
-                              <li><a href="#">Profile</a></li>
-                              <li><a href="#">Payment Info</a></li>
-                              <li><a href="#">Settings</a></li>
-                              <li><a href="#">Help</a></li>
+                              <li><Link to="/profile">Profile</Link></li>
+                              <li><Link to="/payment">Payment Info</Link></li>
+                              <li><Link to="/settings">Settings</Link></li>
+                              <li><Link to="/help">Help</Link></li>
                               <li><a href="#">Sign Out</a></li>
                           </ul>
                       </ul>
