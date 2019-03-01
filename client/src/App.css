@@ -79,6 +79,9 @@ nav ol {
   padding: 0.4375em 0.8125em;
   color: white;
   text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
 }
 .nav-horizontal a:visited {
   color: #222;
@@ -151,6 +154,11 @@ main > nav li a {
   padding-top: 60px; */
   padding-left: 5%;
   padding-right: 5%;
+}
+
+.nav-horizontal ul.primary-nav li ul a {
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .nav-horizontal a.avatar {

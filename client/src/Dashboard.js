@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import logo from './logo.svg';
 import './App.css';
-import Checkout from './Checkout';
+import './Dashboard.css';
+import App from './App';
 
 import ScrollFade from './ScrollFade'
 
-class App extends Component {
+class Dashboard extends Component {
 
   render() {
     
@@ -19,15 +20,15 @@ class App extends Component {
               
               <ul className="primary-nav">
                   <li className="logo">
-                    <a href="#">EMA</a>
+                  <Link to="/">EMA</Link>
                   </li>
                   
                   <li><a href="#">Add Your Band</a></li>
                   <li><a href="#">Explore Bands</a></li>
-                  <li><Link to="/dashboard" className="avatar">IMG</Link>
+                  <li><a href="#" className="avatar">IMG</a>
                       <ul>
                           <ul>
-                              <li><Link to="/dashboard">Dashboard</Link></li>
+                              <li><a href="#">Dashboard</a></li>
                               <li><a href="#">Profile</a></li>
                               <li><a href="#">Payment Info</a></li>
                               <li><a href="#">Settings</a></li>
@@ -42,48 +43,22 @@ class App extends Component {
           </nav>
           <div className="wrapper">
           
-              <main>
-              <ScrollFade when={-200} actionIn="sendSecondHeader sendSecondHeaderOut" actionOut="sendSecondHeader sendSecondHeaderIn">
-                  <nav className="collapsedNav">
-                    <ul className="bandInfoCollapsed">
-                      <li>
-                        <h3 className="bandHeaderTitleCollapsed">Cradle of Filth</h3>
-                        <p className="bandEliteFansCollapsed">5432 Elite Fans</p>
-                      </li>
-                      <li className="bandHeaderImgCollapsed"></li>
-                      
-                    </ul>
-                    <ul className="metaActions">
-                  
-                        <li><a href="#" className="buttonMetaDark">Share</a></li>
-                        <li><a href="#" className="buttonMetaDark">Follow</a></li>
-                        <li><a href="#" className="buttonLarge secondHeaderCTA">Get Elite Access</a></li>
-                      
-                    </ul>
-                  </nav>
-                </ScrollFade>
-                <section className="contentWrapper">
-                    <ScrollFade when={0} actionIn="scaleHeroHeader scaleHeroHeaderIn" actionOut="scaleHeroHeader scaleHeroHeaderOut">
-                      <section className="heroHeader">
-                        <h2 className="bandNameLarge">Cradle of Filth</h2>
-                        <a href="#" className="buttonLarge">Get Elite Access</a>
-                        <p className="eliteFans">5342 Elite Fans</p>
-                        <section className="metaActions">
-                          <a href="#" className="buttonMeta">Follow</a>
-                          <a href="#" className="buttonMeta">Share</a>
-                        </section>
-                      </section>
-                    </ScrollFade>
-                    <ScrollFade when={-200} actionIn="fadeHero fadeHeroIn" actionOut="fadeHero fadeHeroOut">
-                        <section className="hero" ref={this.hero}>
-
-                        </section>
-                    </ScrollFade>
-                    <Checkout
-                      name={'Cradle of Filth'}
-                      description={'Become an Elite Fan'}
-                      amount={1}
-                    />
+              <main className="dashboard">
+                <div className="dashboard-wrapper">
+                    <nav>
+                        <a href="#">Updates</a>
+                        <a href="#">Subscriptions</a>
+                        <ul>
+                            <li><a href="#">Cradle of Filth</a></li>
+                            <li><a href="#">Wednesday13</a></li>
+                            <li><a href="#">Manage Subscriptions</a></li>
+                        </ul>
+                        <a href="#">Profile</a>
+                        <a href="#">Payment Info</a>
+                        <a href="#">Settings</a>
+                    </nav>
+                    <div className="dashboard-content">
+                    
                     <section className="feed">
                       <nav>
                         <a href="#">All Content</a>
@@ -143,13 +118,19 @@ class App extends Component {
                         </div>
                       </article>
                     </section>
-                </section>
+  
+                    </div>
+                </div>
+                
               </main>
               
           </div>
+         
+        {/* <Route exact path="/" component={App} /> */}
       </div>
+    
     );
   }
 }
 
-export default App;
+export default Dashboard;
