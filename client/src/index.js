@@ -12,7 +12,7 @@ import AddBand from './AddBand';
 import Band from './Band';
 import Help from './Help';
 import LogIn from './LogIn';
-
+import Register from './Register';
 
 import * as serviceWorker from './serviceWorker';
 import PaymentInfo from './PaymentInfo';
@@ -31,6 +31,7 @@ const routing = (
         <Route path="/help" component={Help} />
         <Route path="/band" component={Band} />
         <Route path="/login" component={LogIn} />
+        <Route path="/register" component={Register} />
       </div>
     </Router>
   )
