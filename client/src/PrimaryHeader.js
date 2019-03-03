@@ -16,6 +16,8 @@ class PrimaryHeader extends Component {
               </li>           
               <li><a href="#">Add Your Band</a></li>
               <li><Link to="/explore">Explore Bands</Link></li>
+              <li><Link to="/login">Login</Link></li>
+              <li><Link to="/register">Sign Up</Link></li>
               <li><Link to="/dashboard" className="avatar">IMG</Link>
                   <ul>
                       <ul>
