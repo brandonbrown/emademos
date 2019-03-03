@@ -6,6 +6,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "classnames": "^2.2.6",
+    "cleave.js": "^1.4.7",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-on-scroll": "^0.2.2",

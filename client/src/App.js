@@ -14,9 +14,10 @@ class App extends Component {
     return (
       <div className="app-wrapper">
           <input className="checkbox-off-canvas" type="checkbox" id="menu" />
-          <label className="label-off-canvas" for="menu" onclick></label>
+          <label className="label-off-canvas" htmlFor="menu" onclick></label>
 
           <PrimaryHeader />
+
           <div className="wrapper">
           
               <main>

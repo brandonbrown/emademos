@@ -11,6 +11,8 @@ import Profile from './Profile';
 import AddBand from './AddBand';
 import Band from './Band';
 import Help from './Help';
+import LogIn from './LogIn';
+
 
 import * as serviceWorker from './serviceWorker';
 import PaymentInfo from './PaymentInfo';
@@ -28,6 +30,7 @@ const routing = (
         <Route path="/payment" component={PaymentInfo} />
         <Route path="/help" component={Help} />
         <Route path="/band" component={Band} />
+        <Route path="/login" component={LogIn} />
       </div>
     </Router>
   )
