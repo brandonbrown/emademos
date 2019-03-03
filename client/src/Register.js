@@ -84,7 +84,7 @@ class Register extends Component {
                                     checked={this.state.remember}
                                     
                                     />
-                                <label htmlFor="remember">I have read and agree to the EMA Terms of Service</label>
+                                <label htmlFor="remember">I agree to the EMA Terms of Service</label>
                             </div>
                             
                             <input className="form-submit" type="submit" value="Submit" />

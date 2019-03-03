@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
+import Cleave from 'cleave.js/react';
 
 import './App.css';
 import './Dashboard.css';
@@ -21,7 +24,34 @@ class PaymentInfo extends Component {
           
               <main className="dashboard">
                 <div className="dashboard-wrapper">
-                  <p>PaymentInfo</p>
+                <nav>
+                    <Link to="/dashboard">Updates</Link>
+                    <Link to="/subscriptions">Subscriptions</Link>
+                    <ul>
+                        <li><Link to="/band">Cradle of Filth</Link></li>
+                        <li><Link to="/band">Wednesday 13</Link></li>
+                        <li><Link to="/subscriptions">Manage subscriptions</Link></li>
+                    </ul>
+                    <Link to="/profile">Profile</Link>
+                    <Link to="/payment">Payment Info</Link>
+                    <Link to="/settings">Settings</Link>
+                </nav>
+                <div className="dashboard-content">
+                  <div className="form-container">
+                    <h3>Current Information</h3>
+                    <h3>Your Name</h3>
+                    <Cleave placeholder="Name"
+                          options={{creditCard: false}}
+                          onFocus={this.onCreditCardFocus}
+                          onChange={this.onCreditCardChange} />
+                    <h3>Card</h3>
+                    <Cleave placeholder="4242424242424242"
+                        options={{creditCard: true}}
+                        onFocus={this.onCreditCardFocus}
+                        onChange={this.onCreditCardChange} />
+                    
+                      </div>
+                </div>
                 </div>
                 
               </main>

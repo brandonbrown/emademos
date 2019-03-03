@@ -28,8 +28,8 @@ class Dashboard extends Component {
                             <li><Link to="/subscriptions">Manage subscriptions</Link></li>
                         </ul>
                         <Link to="/profile">Profile</Link>
-                        <Link to="//payment">Payment Info</Link>
-                        <Link to="//settings">Cradle of Filth</Link>
+                        <Link to="/payment">Payment Info</Link>
+                        <Link to="/settings">Settings</Link>
                     </nav>
                     <div className="dashboard-content">
                     
