@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './App.css';
+import logo from './assets/img/emalogo.png'
 
 class PrimaryHeader extends Component {
 
@@ -11,7 +12,7 @@ class PrimaryHeader extends Component {
               
           <ul className="primary-nav">
               <li className="logo">
-              <Link to="/">EMA</Link>
+              <Link to="/"><img className="logoimg" src={logo} /></Link>
               </li>           
               <li><a href="#">Add Your Band</a></li>
               <li><Link to="/explore">Explore Bands</Link></li>
