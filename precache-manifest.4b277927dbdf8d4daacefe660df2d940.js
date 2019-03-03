@@ -16,19 +16,19 @@ self.__precacheManifest = [
     "url": "/emademos/static/js/runtime~main.85c472ee.js"
   },
   {
-    "revision": "af7ccfd95e2621b2bb10",
-    "url": "/emademos/static/js/main.af7ccfd9.chunk.js"
+    "revision": "408a04d7a9b46139e05c",
+    "url": "/emademos/static/js/main.408a04d7.chunk.js"
   },
   {
     "revision": "ed3c5e43bd6bd983e1e8",
     "url": "/emademos/static/js/2.ed3c5e43.chunk.js"
   },
   {
-    "revision": "af7ccfd95e2621b2bb10",
+    "revision": "408a04d7a9b46139e05c",
     "url": "/emademos/static/css/main.fe7007f3.chunk.css"
   },
   {
-    "revision": "2f16c8b0eebecaa7c31c068d16a16f71",
+    "revision": "b5aa9dc3d014bdf31a79541e39d873e3",
     "url": "/emademos/index.html"
   }
 ];
