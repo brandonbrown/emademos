@@ -1,15 +1,16 @@
 {
-  "main.css": "/emademos/static/css/main.b3bc85da.chunk.css",
-  "main.js": "/emademos/static/js/main.bdc8fbd2.chunk.js",
-  "main.js.map": "/emademos/static/js/main.bdc8fbd2.chunk.js.map",
+  "main.css": "/emademos/static/css/main.fe7007f3.chunk.css",
+  "main.js": "/emademos/static/js/main.af7ccfd9.chunk.js",
+  "main.js.map": "/emademos/static/js/main.af7ccfd9.chunk.js.map",
   "runtime~main.js": "/emademos/static/js/runtime~main.85c472ee.js",
   "runtime~main.js.map": "/emademos/static/js/runtime~main.85c472ee.js.map",
-  "static/js/2.3d350f66.chunk.js": "/emademos/static/js/2.3d350f66.chunk.js",
-  "static/js/2.3d350f66.chunk.js.map": "/emademos/static/js/2.3d350f66.chunk.js.map",
+  "static/js/2.ed3c5e43.chunk.js": "/emademos/static/js/2.ed3c5e43.chunk.js",
+  "static/js/2.ed3c5e43.chunk.js.map": "/emademos/static/js/2.ed3c5e43.chunk.js.map",
   "index.html": "/emademos/index.html",
-  "precache-manifest.8a4ad21a26623add051c29e607774101.js": "/emademos/precache-manifest.8a4ad21a26623add051c29e607774101.js",
+  "precache-manifest.84c870bd7a03f282272aa41cd8aa8204.js": "/emademos/precache-manifest.84c870bd7a03f282272aa41cd8aa8204.js",
   "service-worker.js": "/emademos/service-worker.js",
-  "static/css/main.b3bc85da.chunk.css.map": "/emademos/static/css/main.b3bc85da.chunk.css.map",
+  "static/css/main.fe7007f3.chunk.css.map": "/emademos/static/css/main.fe7007f3.chunk.css.map",
   "static/media/App.css": "/emademos/static/media/band1.7b39573a.png",
+  "static/media/emalogo.png": "/emademos/static/media/emalogo.6284a4e3.png",
   "static/media/logo.svg": "/emademos/static/media/logo.5d5d9eef.svg"
 }
