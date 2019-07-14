@@ -1,0 +1,13 @@
+.form-container h3 {
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.form-container h3:nth-child(1){
+    margin-top: 0;
+}
