@@ -21,13 +21,15 @@ const routing = (
     <Router basename={process.env.PUBLIC_URL}>
       <div>
         <Route exact path="/" component={App} />
-        <Route path="/dashboard" component={Dashboard} />
-        <Route path="/subscriptions" component={Subscriptions} />
         <Route path="/explore" component={Explore} />
-        <Route path="/add-band" component={AddBand} />
-        <Route path="/profile" component={Profile} />
-        <Route path="/settings" component={Settings} />
-        <Route path="/payment" component={PaymentInfo} />
+        
+        <Route path="/user" component={Dashboard} />
+        <Route path="/subscriptions" component={Subscriptions} exact />
+        <Route path="/add-band" component={AddBand} exact />
+        <Route path="/profile" component={Profile} exact />
+        <Route path="/settings" component={Settings} exact />
+        <Route path="/payment" component={PaymentInfo} exact />
+
         <Route path="/help" component={Help} />
         <Route path="/band" component={Band} />
         <Route path="/login" component={LogIn} />

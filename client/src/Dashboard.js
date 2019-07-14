@@ -8,7 +8,8 @@ import PrimaryHeader from './PrimaryHeader'
 class Dashboard extends Component {
 
   render() {
-    
+    const { match } = this.props
+    console.log("match: ", match.url)
     return (
       <div className="app-wrapper">
         <input className="checkbox-off-canvas" type="checkbox" id="menu" />
@@ -20,16 +21,17 @@ class Dashboard extends Component {
               <main className="dashboard">
                 <div className="dashboard-wrapper">
                     <nav>
-                        <Link to="/dashboard">Updates</Link>
+                    <Link to="/user">Updates</Link>
                         <Link to="/subscriptions">Subscriptions</Link>
                         <ul>
                             <li><Link to="/band">Cradle of Filth</Link></li>
                             <li><Link to="/band">Wednesday 13</Link></li>
-                            <li><Link to="/subscriptions">Manage subscriptions</Link></li>
+                            <li><Link to={`${match.url}/subscriptions`}>Manage subscriptions</Link></li>
                         </ul>
-                        <Link to="/profile">Profile</Link>
-                        <Link to="/payment">Payment Info</Link>
-                        <Link to="/settings">Settings</Link>
+                        <Link to={`${match.url}/profile`}>Profile</Link>
+                        <Link to={`${match.url}/payment`}>Payment Info</Link>
+                        <Link to={`${match.url}/settings`}>Settings</Link>
+
                     </nav>
                     <div className="dashboard-content">
                     

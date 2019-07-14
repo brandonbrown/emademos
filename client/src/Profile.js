@@ -23,16 +23,17 @@ class Profile extends Component {
               <main className="dashboard">
                 <div className="dashboard-wrapper">
                 <nav>
-                    <Link to="/dashboard">Updates</Link>
-                    <Link to="/subscriptions">Subscriptions</Link>
-                    <ul>
-                        <li><Link to="/band">Cradle of Filth</Link></li>
-                        <li><Link to="/band">Wednesday 13</Link></li>
-                        <li><Link to="/subscriptions">Manage subscriptions</Link></li>
-                    </ul>
-                    <Link to="/profile">Profile</Link>
-                    <Link to="/payment">Payment Info</Link>
-                    <Link to="/settings">Settings</Link>
+                <Link to="/user">Updates</Link>
+                        <Link to="/subscriptions">Subscriptions</Link>
+                        <ul>
+                            <li><Link to="/band">Cradle of Filth</Link></li>
+                            <li><Link to="/band">Wednesday 13</Link></li>
+                            <li><Link to="/subscriptions">Manage subscriptions</Link></li>
+                        </ul>
+                        <Link to="/profile">Profile</Link>
+                        <Link to="/payment">Payment Info</Link>
+                        <Link to="/settings">Settings</Link>
+                    
                 </nav>
                 <div className="dashboard-content">
                   <div className="form-container">

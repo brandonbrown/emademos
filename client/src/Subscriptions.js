@@ -9,6 +9,7 @@ import PrimaryHeader from './PrimaryHeader'
 class Subscriptions extends Component {
 
   render() {
+
     
     return (
       <div className="app-wrapper">
@@ -20,8 +21,8 @@ class Subscriptions extends Component {
           
               <main className="dashboard">
                 <div className="dashboard-wrapper">
-                  <nav>
-                        <Link to="/dashboard">Updates</Link>
+                    <nav>
+                        <Link to="/user">Updates</Link>
                         <Link to="/subscriptions">Subscriptions</Link>
                         <ul>
                             <li><Link to="/band">Cradle of Filth</Link></li>
@@ -50,7 +51,7 @@ class Subscriptions extends Component {
               
           </div>
          
-        {/* <Route exact path="/" component={App} /> */}
+          {/* <Route path={`/subscriptions`} component={Subscriptions}/> */}
       </div>
     
     );

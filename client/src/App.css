@@ -305,7 +305,7 @@ main > nav li a {
 }
 
 .sendSecondHeaderIn {
-  top: 33px;
+  top: 80px;
   visibility: visible;
   opacity: 1;
   transition: top .25s ease-in-out,

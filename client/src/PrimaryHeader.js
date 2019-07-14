@@ -18,10 +18,10 @@ class PrimaryHeader extends Component {
               <li><Link to="/explore">Explore Bands</Link></li>
               <li><Link to="/login">Login</Link></li>
               <li><Link to="/register">Sign Up</Link></li>
-              <li><Link to="/dashboard" className="avatar">IMG</Link>
+              <li><Link to="/user" className="avatar">IMG</Link>
                   <ul>
                       <ul>
-                          <li><Link to="/dashboard">Dashboard</Link></li>
+                          <li><Link to="/user">Dashboard</Link></li>
                           <li><Link to="/profile">Profile</Link></li>
                           <li><Link to="/payment">Payment Info</Link></li>
                           <li><Link to="/settings">Settings</Link></li>

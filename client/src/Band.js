@@ -23,7 +23,7 @@ class Band extends Component {
               <main className="dashboard">
                 <div className="dashboard-wrapper">
                     <nav>
-                        <Link to="/dashboard">Updates</Link>
+                    <Link to="/user">Updates</Link>
                         <Link to="/subscriptions">Subscriptions</Link>
                         <ul>
                             <li><Link to="/band">Cradle of Filth</Link></li>
@@ -33,6 +33,7 @@ class Band extends Component {
                         <Link to="/profile">Profile</Link>
                         <Link to="/payment">Payment Info</Link>
                         <Link to="/settings">Settings</Link>
+               
                     </nav>
                     <div className="dashboard-content">
                     

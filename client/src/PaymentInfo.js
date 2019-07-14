@@ -49,7 +49,7 @@ class PaymentInfo extends Component {
                         options={{creditCard: true}}
                         onFocus={this.onCreditCardFocus}
                         onChange={this.onCreditCardChange} />
-                    
+                    <h3>Add PayPal</h3>
                       </div>
                 </div>
                 </div>
