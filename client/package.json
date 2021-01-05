@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://brandonbrown.github.io/emademos",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "classnames": "^2.2.6",
     "cleave.js": "^1.4.7",
     "react": "^16.8.3",
